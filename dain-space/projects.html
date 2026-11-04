@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — DAIN'S SPACE</title>
+  <meta name="description" content="이다인의 과제 및 프로젝트를 소개합니다. 전공별, 유형별로 필터링하거나 검색할 수 있습니다.">
+  <meta property="og:title" content="Projects — DAIN'S SPACE">
+  <meta property="og:description" content="이다인의 프로젝트 목록 페이지입니다.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ── Navigation ── -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="주 메뉴">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="DAIN'S SPACE 홈으로 이동">DAIN'<span>S</span> SPACE</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="university.html" class="nav-link">University</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+          <li><a href="interests.html" class="nav-link">Interests</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <nav id="nav-mobile" class="nav-mobile" aria-label="모바일 메뉴" aria-hidden="true">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Me</a>
+      <a href="university.html" class="nav-link">University</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="interests.html" class="nav-link">Interests</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Page Hero ── -->
+    <section class="page-hero" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="page-hero-label fade-in">Projects</p>
+        <h1 class="page-hero-title fade-in fade-in-delay-1" id="projects-heading">프로젝트</h1>
+        <p class="page-hero-desc fade-in fade-in-delay-2">과제와 프로젝트의 주제, 과정, 역할과 결과를 정리했습니다.</p>
+      </div>
+    </section>
+
+    <div class="section">
+      <div class="container">
+
+        <!-- ── 검색 및 필터 ── -->
+        <div class="search-filter-bar fade-in" role="search" aria-label="프로젝트 검색 및 필터">
+          <div class="search-input-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="search" id="project-search" class="search-input" placeholder="프로젝트명 또는 키워드 검색..."
+              aria-label="프로젝트 검색">
+          </div>
+
+          <!-- 전공 필터 -->
+          <div class="filter-group" role="group" aria-label="전공 필터">
+            <span class="filter-label">전공</span>
+            <button class="btn btn-ghost active" data-filter-major="all" aria-pressed="true">전체</button>
+            <button class="btn btn-ghost" data-filter-major="food" aria-pressed="false">식품영양학과</button>
+            <button class="btn btn-ghost" data-filter-major="business" aria-pressed="false">경영학과</button>
+          </div>
+
+          <!-- 유형 필터 -->
+          <div class="filter-group" role="group" aria-label="활동 유형 필터">
+            <span class="filter-label">유형</span>
+            <button class="btn btn-ghost active" data-filter-type="all" aria-pressed="true">전체</button>
+            <button class="btn btn-ghost" data-filter-type="team" aria-pressed="false">팀 프로젝트</button>
+            <button class="btn btn-ghost" data-filter-type="individual" aria-pressed="false">개인 과제</button>
+          </div>
+        </div>
+
+        <!-- ── 대표 프로젝트 ── -->
+        <div id="featured-project" class="fade-in" aria-label="대표 프로젝트">
+          <!-- projects.js가 이 영역에 대표 프로젝트를 렌더링합니다 -->
+        </div>
+
+        <!-- ── 프로젝트 목록 안내 ── -->
+        <div style="margin-bottom:var(--space-6);" class="fade-in">
+          <span class="section-label">All Projects</span>
+          <h2 class="section-title" style="font-size:var(--text-xl);">전체 프로젝트</h2>
+        </div>
+
+        <!-- ── 프로젝트 그리드 ── -->
+        <div class="grid-3" id="projects-grid" aria-label="프로젝트 목록" aria-live="polite">
+          <!-- projects.js가 이 영역에 프로젝트 카드를 렌더링합니다 -->
+          <div class="no-results" style="grid-column:1/-1;">
+            <p style="font-size:2rem;margin-bottom:0.75rem;">⏳</p>
+            <p>프로젝트를 불러오는 중입니다...</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">DAIN'S SPACE</div>
+          <p>이다인 (Dain Lee)<br>식품영양학과 · 경영학과</p>
+        </div>
+        <nav class="footer-nav" aria-label="푸터 메뉴">
+          <div class="footer-nav-group">
+            <h4>Pages</h4>
+            <ul>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="university.html">University</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4>More</h4>
+            <ul>
+              <li><a href="interests.html">Interests</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Dain Lee · DAIN'S SPACE. All rights reserved.</p>
+        <button class="footer-back-top" aria-label="페이지 상단으로 이동">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+          맨 위로
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+
+</html>

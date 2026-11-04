@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gFood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8F5"/>
+      <stop offset="60%" stop-color="#FCEEEA"/>
+      <stop offset="100%" stop-color="#FCE1E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#gFood)"/>
+  <!-- Food / Brunch Plate Motif -->
+  <g transform="translate(300, 270)">
+    <circle cx="0" cy="0" r="160" fill="#FFFFFF" stroke="#EAE3DF" stroke-width="4"/>
+    <circle cx="0" cy="0" r="135" fill="none" stroke="#F0EEED" stroke-width="2"/>
+    <!-- Avocado / Greens / Toast -->
+    <rect x="-80" y="-40" width="80" height="80" rx="12" fill="#FAD4DF" opacity="0.6"/>
+    <path d="M 10, -50 C 40, -50 70, -20 60, 20 C 50, 50 10, 40 10, -50 Z" fill="#E8F4E8" stroke="#68B06B" stroke-width="2.5"/>
+    <circle cx="35" cy="-5" r="15" fill="#E8B880"/>
+    <!-- Fork & Spoon -->
+    <path d="M -130, -50 L -130, 60" stroke="#C8BDB8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 130, -50 L 130, 60" stroke="#C8BDB8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="300" y="520" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="500" fill="#703648">전공 실습 브런치 플레이팅</text>
+  <text x="300" y="550" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#8C817D">[예시 사진 / Food]</text>
+</svg>

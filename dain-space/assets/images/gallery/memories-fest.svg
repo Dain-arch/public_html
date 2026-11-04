@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gMem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7"/>
+      <stop offset="50%" stop-color="#FCECE7"/>
+      <stop offset="100%" stop-color="#F7F3EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#gMem)"/>
+  <!-- Polaroid Photo Frame & Garland Motif -->
+  <!-- Garland string -->
+  <path d="M 0, 80 Q 300, 160 600, 80" fill="none" stroke="#D9849A" stroke-width="2" stroke-dasharray="6,6"/>
+  <!-- Little flags -->
+  <polygon points="120,105 150,150 180,108" fill="#FAD4DF"/>
+  <polygon points="260,123 290,170 320,124" fill="#F2A8BC"/>
+  <polygon points="400,111 430,155 460,107" fill="#FCECE7"/>
+  <!-- Instant Photo / Polaroid Card -->
+  <g transform="translate(190, 180) rotate(-4)">
+    <rect x="0" y="0" width="220" height="260" rx="8" fill="#FFFFFF" stroke="#EAE3DF" stroke-width="2"/>
+    <rect x="18" y="18" width="184" height="184" rx="4" fill="#FAD4DF" opacity="0.4"/>
+    <circle cx="110" cy="110" r="40" fill="#FFFFFF" opacity="0.8"/>
+    <text x="110" y="118" text-anchor="middle" font-size="28">✨</text>
+    <text x="110" y="235" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" fill="#703648">Memories</text>
+  </g>
+  <text x="300" y="520" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="16" font-weight="500" fill="#703648">축제와 동기들의 추억</text>
+  <text x="300" y="550" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#8C817D">[예시 사진 / Memories]</text>
+</svg>

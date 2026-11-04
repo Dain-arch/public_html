@@ -1,0 +1,286 @@
+/* ============================================
+   DAIN'S SPACE — Responsive
+   responsive.css
+   ============================================ */
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+
+  /* Hero */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-12);
+  }
+
+  .hero-content { order: 2; }
+  .hero-visual  { order: 1; }
+
+  .hero-greeting {
+    justify-content: center;
+  }
+
+  .hero-meta-item {
+    justify-content: center;
+  }
+
+  .hero-quote {
+    border-left: none;
+    border-top: 3px solid var(--color-primary-soft);
+    padding-left: 0;
+    padding-top: var(--space-4);
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-illustration-frame {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Summary Cards */
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Project Featured Card */
+  .project-featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-featured-card .featured-img {
+    min-height: 240px;
+  }
+
+  /* Grid */
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+
+  /* Lightbox nav */
+  .lightbox-prev { left: -52px; }
+  .lightbox-next { right: -52px; }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  /* Contact */
+  .contact-card {
+    padding: var(--space-8) var(--space-6);
+  }
+}
+
+
+/* ── Mobile (≤ 768px) ── */
+@media (max-width: 768px) {
+
+  :root {
+    --nav-height: 64px;
+  }
+
+  /* Navigation */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: calc(var(--nav-height) + var(--space-8));
+    padding-bottom: var(--space-16);
+  }
+
+  .hero-name {
+    font-size: var(--text-3xl);
+  }
+
+  .hero-illustration-frame {
+    max-width: 240px;
+  }
+
+  /* Summary Cards */
+  .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  /* Welcome Banner */
+  .welcome-banner {
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+  }
+
+  .welcome-banner p {
+    font-size: var(--text-base);
+  }
+
+  /* Grids */
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+
+  /* Search & Filter */
+  .search-filter-bar {
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-4);
+  }
+
+  .search-input-wrap {
+    min-width: 100%;
+  }
+
+  /* Project */
+  .project-card-body {
+    padding: var(--space-5);
+  }
+
+  .project-featured-card .featured-content {
+    padding: var(--space-6);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-3);
+  }
+
+  /* Lightbox */
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+  }
+  .lightbox-prev { left: var(--space-3); }
+  .lightbox-next { right: var(--space-3); }
+
+  .lightbox-content {
+    max-width: 95vw;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    padding: calc(var(--nav-height) + var(--space-10)) 0 var(--space-10);
+  }
+
+  /* Profile Info */
+  .profile-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* University */
+  .uni-section-anchor {
+    position: static;
+    gap: var(--space-2);
+  }
+
+  /* Footer */
+  .footer-nav {
+    gap: var(--space-6);
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  /* Contact */
+  .contact-card {
+    padding: var(--space-6) var(--space-5);
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-method-item {
+    padding: var(--space-4) var(--space-5);
+  }
+}
+
+
+/* ── Small Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+
+  /* Summary Cards */
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Grids */
+  .grid-4 { grid-template-columns: 1fr; }
+
+  /* Profile */
+  .profile-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Traits */
+  .trait-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Hobbies */
+  .interests-hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 0.7rem 1.25rem;
+    font-size: var(--text-sm);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Lightbox */
+  .lightbox-close {
+    top: -var(--space-10);
+    top: calc(-1 * var(--space-10));
+  }
+}
+
+
+/* ── Print ── */
+@media print {
+  .nav,
+  .footer-back-top,
+  .search-filter-bar,
+  .gallery-tabs,
+  .btn,
+  .lightbox {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    color: #000;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .page-hero {
+    padding: 2rem 0;
+  }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EF"/>
+      <stop offset="50%" stop-color="#EFEAE6"/>
+      <stop offset="100%" stop-color="#FAD4DF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#pGrad3)"/>
+  <circle cx="150" cy="380" r="160" fill="#FFFFFF" opacity="0.5"/>
+
+  <g transform="translate(400, 210)">
+    <!-- Business / Strategy Motif -->
+    <rect x="-80" y="-80" width="160" height="160" rx="30" fill="#FFFFFF" stroke="#D9849A" stroke-width="3"/>
+    <!-- Analytics Graph & Lightbulb Motif -->
+    <path d="M -45, 30 L -15, -5 L 15, 10 L 45, -30" fill="none" stroke="#D9849A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="45" cy="-30" r="5" fill="#D9849A"/>
+    <!-- Bar charts -->
+    <rect x="-48" y="32" width="10" height="15" rx="2" fill="#FAD4DF"/>
+    <rect x="-18" y="10" width="10" height="37" rx="2" fill="#FAD4DF"/>
+    <rect x="12" y="22" width="10" height="25" rx="2" fill="#F2A8BC"/>
+  </g>
+
+  <rect x="320" y="325" width="160" height="32" rx="16" fill="#FFFFFF" stroke="#D9849A" stroke-width="1.5"/>
+  <text x="400" y="346" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="13" font-weight="600" fill="#703648">경영학 마케팅 과제</text>
+  <text x="400" y="450" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#8C817D">[프로젝트 예시 썸네일 이미지]</text>
+</svg>

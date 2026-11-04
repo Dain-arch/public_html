@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="50%" stop-color="#FAD4DF"/>
+      <stop offset="100%" stop-color="#F5E6E8"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#803D52" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#pGrad1)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="120" cy="100" r="140" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="700" cy="400" r="180" fill="#F2A8BC" opacity="0.25"/>
+
+  <!-- Center Card -->
+  <g filter="url(#cardShadow)">
+    <rect x="180" y="70" width="440" height="360" rx="24" fill="#FFFFFF" stroke="#FCECEF" stroke-width="2"/>
+  </g>
+
+  <!-- Illustration Motifs: Nutrition + Business Integration -->
+  <g transform="translate(400, 220)">
+    <!-- Food Nutrition Icon Motif (Bowl & Healthy Veggies) -->
+    <path d="M -90, -10 C -90, 50 -10, 50 -10, -10 Z" fill="#FAD4DF" stroke="#D9849A" stroke-width="3"/>
+    <ellipse cx="-50" cy="-10" rx="40" ry="10" fill="#FFFFFF" stroke="#D9849A" stroke-width="2.5"/>
+    <path d="M -60, -35 Q -40, -25 -50, -10" fill="none" stroke="#68B06B" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="-35" cy="-20" r="8" fill="#F2A8BC"/>
+
+    <!-- Plus / Bridge Symbol -->
+    <text x="0" y="5" font-family="'Playfair Display', serif" font-size="32" font-weight="700" fill="#D9849A" text-anchor="middle">&amp;</text>
+
+    <!-- Business Marketing Icon Motif (Growth Chart & Target) -->
+    <g transform="translate(30, -30)">
+      <rect x="0" y="0" width="70" height="60" rx="8" fill="#F7F3EF" stroke="#C8BDB8" stroke-width="2"/>
+      <path d="M 12, 45 L 28, 30 L 42, 36 L 58, 15" fill="none" stroke="#D9849A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="58" cy="15" r="4" fill="#D9849A"/>
+    </g>
+  </g>
+
+  <!-- Text Badge -->
+  <rect x="300" y="340" width="200" height="34" rx="17" fill="#FAD4DF"/>
+  <text x="400" y="362" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="13" font-weight="600" fill="#803D52" letter-spacing="1">식품영양 · 경영 융합 프로젝트</text>
+  <text x="400" y="460" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-size="12" fill="#8C817D">[대표 프로젝트 예시 썸네일 이미지]</text>
+</svg>

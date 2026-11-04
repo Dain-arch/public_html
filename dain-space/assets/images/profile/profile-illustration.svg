@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7"/>
+      <stop offset="50%" stop-color="#FDE8EE"/>
+      <stop offset="100%" stop-color="#F7EBE4"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAD4DF"/>
+      <stop offset="100%" stop-color="#F2A8BC"/>
+    </linearGradient>
+    <linearGradient id="accentPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F2A8BC"/>
+      <stop offset="100%" stop-color="#D9849A"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#703648" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Abstract Geometric Shapes -->
+  <circle cx="510" cy="130" r="140" fill="#FAD4DF" opacity="0.45"/>
+  <circle cx="90" cy="690" r="160" fill="#FCECE7" opacity="0.6"/>
+  <circle cx="530" cy="670" r="80" fill="#FAD4DF" opacity="0.3"/>
+
+  <!-- Decorative Botanical Leaves (Soft Minimalist Line Art) -->
+  <g stroke="#D9849A" stroke-width="2.5" fill="none" opacity="0.45" stroke-linecap="round">
+    <!-- Top Right Branch -->
+    <path d="M 440,80 Q 480,120 540,140"/>
+    <path d="M 470,95 Q 490,80 500,95 Q 485,108 470,95 Z" fill="#FAD4DF" opacity="0.5"/>
+    <path d="M 500,115 Q 525,105 530,120 Q 515,130 500,115 Z" fill="#FAD4DF" opacity="0.5"/>
+    <path d="M 525,133 Q 550,130 550,145 Q 535,150 525,133 Z" fill="#FAD4DF" opacity="0.5"/>
+  </g>
+
+  <!-- Main Illustration Art Card / Frame -->
+  <g filter="url(#softShadow)">
+    <rect x="75" y="110" width="450" height="580" rx="225" fill="url(#cardGrad)" stroke="#FFFFFF" stroke-width="4"/>
+  </g>
+
+  <!-- Central Character & Motifs Composition (Minimalist & Aesthetic Portrait) -->
+  <g transform="translate(0, 40)">
+    <!-- Soft Glow behind Portrait -->
+    <circle cx="300" cy="360" r="160" fill="#FFF0F4"/>
+
+    <!-- Books / Academic Motif (Food Nutrition & Business) -->
+    <g transform="translate(230, 475)">
+      <!-- Book 1 (Food Nutrition) -->
+      <path d="M -90, 70 L -40, 50 L 10, 70 L -40, 90 Z" fill="#FAD4DF" stroke="#D9849A" stroke-width="2"/>
+      <path d="M -90, 70 L -90, 85 L -40, 105 L -40, 90 Z" fill="#F2A8BC" stroke="#D9849A" stroke-width="2"/>
+      <path d="M -40, 90 L -40, 105 L 10, 85 L 10, 70 Z" fill="#E892A8" stroke="#D9849A" stroke-width="2"/>
+
+      <!-- Book 2 (Business Strategy) -->
+      <path d="M -85, 48 L -40, 32 L 5, 48 L -40, 64 Z" fill="#FFFFFF" stroke="#C8BDB8" stroke-width="2"/>
+      <path d="M -85, 48 L -85, 63 L -40, 79 L -40, 64 Z" fill="#F0EEED" stroke="#C8BDB8" stroke-width="2"/>
+      <path d="M -40, 64 L -40, 79 L 5, 63 L 5, 48 Z" fill="#EAE3DF" stroke="#C8BDB8" stroke-width="2"/>
+    </g>
+
+    <!-- Warm Tea Cup / Cozy Study Vibe -->
+    <g transform="translate(420, 520)">
+      <rect x="-22" y="-5" width="44" height="34" rx="10" fill="#FFFFFF" stroke="#D9849A" stroke-width="2"/>
+      <!-- Cup Handle -->
+      <path d="M 22, 2 C 34, 2 34, 20 22, 20" fill="none" stroke="#D9849A" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Tea Liquid -->
+      <ellipse cx="0" cy="-4" rx="20" ry="7" fill="#FAD4DF"/>
+      <!-- Soft Steam -->
+      <path d="M -5, -15 Q -10, -25 -5, -35" fill="none" stroke="#F2A8BC" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+      <path d="M 6, -18 Q 1, -28 6, -38" fill="none" stroke="#F2A8BC" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+      <!-- Saucer -->
+      <ellipse cx="0" cy="32" rx="30" ry="5" fill="#FFFFFF" stroke="#D9849A" stroke-width="2"/>
+    </g>
+
+    <!-- Stylized Minimalist Portrait (Upper Body & Head) -->
+    <!-- Torso / Pastel Knit Sweater -->
+    <path d="M 190, 480 C 190, 420 230, 385 300, 385 C 370, 385 410, 420 410, 480 L 415, 560 C 370, 575 230, 575 185, 560 Z" fill="#FAD4DF" stroke="#D9849A" stroke-width="2"/>
+    
+    <!-- Collar Line -->
+    <path d="M 270, 388 Q 300, 415 330, 388" fill="none" stroke="#D9849A" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Neck -->
+    <rect x="282" y="335" width="36" height="58" rx="12" fill="#FFEFEA"/>
+
+    <!-- Head / Face Silhouette -->
+    <path d="M 245, 275 C 245, 200 355, 200 355, 275 C 355, 335 328, 355 300, 355 C 272, 355 245, 335 245, 275 Z" fill="#FFEFEA"/>
+
+    <!-- Hair (Soft Elegant Bob/Shoulder-length, Minimalist Warm Cocoa Tone) -->
+    <!-- Back Hair -->
+    <path d="M 230, 260 C 220, 360 260, 410 270, 420 C 265, 370 250, 330 255, 260 Z" fill="#5A4743"/>
+    <path d="M 370, 260 C 380, 360 340, 410 330, 420 C 335, 370 350, 330 345, 260 Z" fill="#5A4743"/>
+    <!-- Top & Bangs Hair -->
+    <path d="M 235, 265 C 235, 175 365, 175 365, 265 C 365, 275 360, 290 355, 280 C 345, 240 330, 225 300, 225 C 265, 225 248, 245 242, 280 C 238, 290 235, 275 235, 265 Z" fill="#5A4743"/>
+    <path d="M 240, 255 Q 275, 230 310, 248 Q 280, 260 240, 255 Z" fill="#6E5652"/>
+
+    <!-- Soft Facial Features (Minimalist Eyes & Smile) -->
+    <path d="M 272, 280 Q 282, 285 290, 280" fill="none" stroke="#5A4743" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 310, 280 Q 318, 285 328, 280" fill="none" stroke="#5A4743" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Blush -->
+    <ellipse cx="268" cy="296" rx="9" ry="5" fill="#F2A8BC" opacity="0.6"/>
+    <ellipse cx="332" cy="296" rx="9" ry="5" fill="#F2A8BC" opacity="0.6"/>
+    <!-- Smile -->
+    <path d="M 293, 310 Q 300, 317 307, 310" fill="none" stroke="#D9849A" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Small Sparkling Star / Aesthetic Accents -->
+    <path d="M 380, 220 L 383, 230 L 393, 233 L 383, 236 L 380, 246 L 377, 236 L 367, 233 L 377, 230 Z" fill="#F2A8BC"/>
+    <circle cx="215" cy="245" r="4" fill="#F2A8BC"/>
+    <circle cx="205" cy="265" r="2.5" fill="#D9849A" opacity="0.7"/>
+    <circle cx="395" cy="265" r="3" fill="#D9849A" opacity="0.7"/>
+  </g>
+
+  <!-- Elegant Bottom Label / Ribbon -->
+  <g transform="translate(190, 685)">
+    <rect x="0" y="0" width="220" height="38" rx="19" fill="#FFFFFF" stroke="#FAD4DF" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="110" y="24" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="600" fill="#D9849A" letter-spacing="1.5">DAIN'S SPACE</text>
+  </g>
+</svg>
